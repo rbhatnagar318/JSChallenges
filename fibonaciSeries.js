@@ -10,3 +10,4 @@ while(nextTerm <= number){
     nextTerm = n1+n2;
 }
 
+

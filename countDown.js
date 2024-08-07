@@ -9,3 +9,4 @@ function countDown(num){
 }
 
 console.log(countDown(10))
+

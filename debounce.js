@@ -15,4 +15,3 @@ function searchData(){
 const debounceFunction = debounce(searchData, 4000);
 debounceFunction();
 
-

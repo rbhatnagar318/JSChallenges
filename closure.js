@@ -8,3 +8,17 @@ function mainFunc(){
 
 const closure = mainFunc();
 closure()
+
+
+function count(){
+    let count=0;
+    return function(){
+       return count++;
+    }
+}
+
+var countClosure = count()
+
+console.log(countClosure())
+console.log(countClosure())
+console.log(countClosure())

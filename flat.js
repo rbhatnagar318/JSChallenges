@@ -21,3 +21,4 @@ console.log(flatArray(arr))
 const arr1 = [1,[2,3],[4,5],[6,7],8]
 const a = arr1.flat(1)
 console.log(a)
+

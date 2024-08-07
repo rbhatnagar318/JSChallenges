@@ -1,6 +1,9 @@
+
+
+
 //Case 1
 
-const str = "My Ankita name is Rahul Bhatnagar";
+const str1 = "My Ankita name is Rahul Bhatnagar";
 
 function findsecondLargest(str){
     let ans = [];
@@ -26,7 +29,7 @@ function findsecondLargest(str){
     return strSplit[index]
 }
 
-console.log(findsecondLargest(str))
+console.log(findsecondLargest(str1))
 
 
 //Case 2
@@ -82,5 +85,3 @@ function secondLaregestNumber(arr){
     return arr[index]
 }
 console.log(secondLaregestNumber(arr2))
-
-
