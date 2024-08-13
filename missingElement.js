@@ -1,4 +1,5 @@
-const arr = [1,2,3,5,6];
+const arr = [1,4,6,5,3];
+const arr1 = [1,4,6,5,3];
 
 function missingElement(arr){
     const n = arr.length + 1;
@@ -13,3 +14,18 @@ function missingElement(arr){
 }
 
 console.log(missingElement(arr))
+
+function findMissingElement(arr1){
+    arr1 = arr1.sort((a,b) => a - b)
+    
+    for(let i=0;i< arr1.length;i++){
+        if(arr1[i] !== i+1){
+            return i+1;
+        }
+    }
+}
+
+console.log(findMissingElement(arr1))
+
+
+

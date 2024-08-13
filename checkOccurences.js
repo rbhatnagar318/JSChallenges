@@ -1,4 +1,4 @@
-function checkOccurences(arr){
+function checkOccurencess(arr){
     let a = arr.split("") 
     let element = {};
     a.forEach(item =>{
@@ -10,6 +10,19 @@ function checkOccurences(arr){
     })
     return element;
 }
+
+console.log(checkOccurencess("GeekforGeeks"))
+
+
+function checkOccurences(arr){
+  let a = arr.split("");
+  let frequency = {};
+  for(let char of a){
+    frequency[char] = (frequency[char] || 0) + 1
+  }
+  return frequency
+}
+
 
 console.log(checkOccurences("GeekforGeeks"))
 

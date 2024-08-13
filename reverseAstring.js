@@ -9,7 +9,10 @@ function customReverseAString(str){
     for(let i=str.length-1;i>=0;i--){
         word += str[i]
     }
-    return word;
+    if(str === word){
+        return true
+    }
+    return false
 }
 
-console.log(customReverseAString("My name is Rahul Bhatnagar"))
+console.log(customReverseAString("madam"))
