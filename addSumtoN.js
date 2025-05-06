@@ -21,3 +21,15 @@ function factorial(num){
 }
 
 console.log(factorial(5))
+
+function addSumtoN(num){
+    if(num ===0 || num === 1){
+        return 1
+    }else{
+        return num + addSumtoN(num-1);
+    }
+}
+
+console.log(addSumtoN(5))
+
+

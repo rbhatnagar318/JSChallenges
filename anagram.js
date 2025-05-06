@@ -5,3 +5,14 @@ function anagram(word1, word2){
 }
 
 console.log(anagram("madam", "madam1"))
+
+// Improved code
+
+const a = "madam";
+const b = "madam1";
+
+function isAnagram(a,b){
+return a.split("").reverse().join("") === b.split("").reverse().join("")
+}
+
+console.log(isAnagram(a, b))

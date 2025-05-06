@@ -46,8 +46,42 @@ function count(str) {
          index = key
       }  
     }
-    return max
+    return `{index} is {max} times`
   }
   
   
   console.log(count("aabbbbccdd"));
+
+  function checkOccurences(str){
+    let maxCount = 0;
+    let maxChar = '';
+    let frequencyCounter = {};
+    for(let i of str){
+        frequencyCounter[i] = (frequencyCounter[i] || 0) + 1;
+        if(frequencyCounter[i] > maxCount){
+            maxCount = frequencyCounter[i];
+            maxChar = i;
+        }
+    }
+    return `${maxChar} is occuring ${maxCount} times`
+}
+
+console.log(checkOccurences("GeekforGeeks"));
+
+//Find firstNonRepeatingChar
+
+function firstNonRepeatingChar(str){
+  let frequencyCounter = {};
+  for(let i of str){
+    frequencyCounter[i] = (frequencyCounter[i] || 0) + 1;
+  }
+
+  for(let char of str){
+    if(frequencyCounter[char] === 1){
+      return char
+    }
+  }
+  return null
+}
+
+console.log(firstNonRepeatingChar("aabbeccdd"))

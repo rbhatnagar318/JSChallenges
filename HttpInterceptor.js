@@ -13,10 +13,10 @@
 //     return next.handle(request)
 // }
 
-import { Injecttable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import{ HttpRequest, HttpInterceptor, HttpHandler, HttpEvent, HttpResponse } from '@angular/common/http';
 
-@Injecttable()
+@Injectable()
 export class HttpHeaders implements HttpInterceptor{
     interept(
         next: HttpHandler,

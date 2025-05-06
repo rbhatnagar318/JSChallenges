@@ -26,7 +26,7 @@ let numbers = [1,2,3,4,5,6,7,8,9];
 function recursive(arr, index = 0){
     if(index >= arr.length) return;
     if(arr[index] % 2 !==0){
-        console.log(arr[i])
+        console.log(arr[index])
     }
     recursive(arr, index+1)
 }
